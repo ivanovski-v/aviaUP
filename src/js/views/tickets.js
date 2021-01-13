@@ -1,6 +1,10 @@
+import formUI from "./form.js";
+import { extractCityFromFullLocation } from "../helpers/string.js";
+
 class TicketsUI {
   constructor() {
     this.container = document.querySelector(".tickets-section .row");
+    this.body = document.body;
   }
 
   renderTickets(tickets) {
@@ -24,16 +28,20 @@ class TicketsUI {
   }
 
   showEmptyMsg() {
-    this.container.insertAdjacentHTML(
-      "afterbegin",
+    document.body.insertAdjacentHTML(
+      "beforeend",
       TicketsUI.generateEmptyMsgTemplate()
     );
   }
 
   static generateEmptyMsgTemplate() {
     return `
-    <div class="tickets-empty-results-msg">
-      No any results found
+    <div class="row #880e4f pink darken-4 tickets-empty-results-msg m0 not-found-p20" style="text-align: center;">
+      <span style="color:white;font-weight: bold;text-align:center;">
+        Sorry, we couldn't found any tickets from ${extractCityFromFullLocation(
+          formUI.fromValue
+        )} to ${extractCityFromFullLocation(formUI.toValue)} for your dates.
+      </span>
     </div>`;
   }
 

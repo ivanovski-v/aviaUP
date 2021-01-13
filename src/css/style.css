@@ -23,6 +23,13 @@
   margin-right: auto;
 }
 
+.m0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .header .brand-logo {
   position: static;
   font-size: 1.5rem;
@@ -188,4 +195,9 @@ button.btn-reset:hover {
 button.btn-reset:focus {
   background-color: red;
   color: whitesmoke;
+}
+
+.not-found-p20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
