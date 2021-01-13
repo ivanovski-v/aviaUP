@@ -10,7 +10,7 @@ M.Autocomplete.init(document.querySelectorAll(".autocomplete"));
 /// Date Picker initialization
 M.Datepicker.init(document.querySelectorAll(".datepicker"), {
   showClearBtn: true,
-  format: "yyyy-mm",
+  format: "dd-mm-yyyy",
 });
 
 //! Exports

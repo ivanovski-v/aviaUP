@@ -169,7 +169,8 @@ button.datepicker-clear {
   color: red;
 }
 
-button.btn-submit {
+button.btn-submit,
+button.btn-submit:focus {
   width: 125px;
   background-color: #880e4f;
   font-family: "Zilla Slab", sans-serif;
@@ -181,7 +182,8 @@ button.btn-submit:hover {
   color: #880e4f;
 }
 
-button.btn-reset {
+button.btn-reset,
+button.btn-reset:focus {
   width: 125px;
   background-color: red;
   font-family: "Zilla Slab", sans-serif;
@@ -189,12 +191,8 @@ button.btn-reset {
 
 button.btn-reset:hover {
   background-color: whitesmoke;
+  font-family: "Zilla Slab", sans-serif;
   color: red;
-}
-
-button.btn-reset:focus {
-  background-color: red;
-  color: whitesmoke;
 }
 
 .not-found-p20 {

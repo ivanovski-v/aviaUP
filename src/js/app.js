@@ -4,6 +4,7 @@ import locations from ".//data/locations.js";
 import formUI from "./views/form.js";
 import currencyUI from "./views/currency.js";
 import ticketUI from "./views/tickets.js";
+import { convertDateToServerFormat } from "./helpers/date.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   initializeApp();
@@ -25,8 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
     //* Collect all the user's input data from the form
     const origin = locations.getCityCodeByCityName(formUI.fromValue);
     const destination = locations.getCityCodeByCityName(formUI.toValue);
-    const depart_date = formUI.departDateValue;
-    const return_date = formUI.returnDateValue;
+    const depart_date = convertDateToServerFormat(formUI.departDateValue);
+    const return_date = convertDateToServerFormat(formUI.returnDateValue);
     const currency = currencyUI.currencyValue;
 
     //* Initiate tickets search
