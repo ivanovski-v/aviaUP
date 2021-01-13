@@ -1,0 +1,191 @@
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .brand-logo {
+  position: static;
+  font-size: 1.5rem;
+  font-family: "Zilla Slab", sans-serif;
+}
+
+.select-wrapper input.select-dropdown {
+  margin: 0px;
+  color: aliceblue;
+  border-bottom: none;
+  width: 110px;
+  font-family: "Zilla Slab", sans-serif;
+}
+
+.select-wrapper input.select-dropdown:focus {
+  border-bottom: none;
+}
+
+.select-wrapper .caret {
+  fill: aliceblue;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="url"]:not(.browser-default):focus:not([readonly]),
+input[type="time"]:not(.browser-default):focus:not([readonly]),
+input[type="date"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+input[type="tel"]:not(.browser-default):focus:not([readonly]),
+input[type="number"]:not(.browser-default):focus:not([readonly]),
+input[type="search"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #880e4f;
+  box-shadow: 0 1px 0 0 #880e4f;
+}
+
+.input-field .prefix.active {
+  color: #880e4f;
+}
+
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: #880e4f;
+}
+
+.row.d-flex {
+  margin-top: 30px;
+  align-items: center;
+}
+
+span.card-title {
+  font-family: "Wire One", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 31px;
+}
+
+span {
+  font-family: "Zilla Slab", sans-serif;
+}
+
+.row .col.m2 {
+  margin-right: 0px;
+}
+
+.input-field > label {
+  font-family: "Zilla Slab", sans-serif;
+}
+
+.input-field > label:not(.label-icon).active {
+  color: #880e4f;
+}
+
+/* DATE PICKERS */
+.datepicker {
+  font-family: "Zilla Slab", sans-serif;
+}
+
+.datepicker-controls .select-month input,
+.datepicker-controls .select-year input {
+  color: black;
+}
+
+.datepicker-date-display {
+  background-color: #880e4f;
+}
+
+.datepicker-table abbr {
+  /* days of week */
+  color: #880e4f;
+}
+
+.datepicker-table td.is-selected {
+  background-color: #880e4f;
+  color: aliceblue;
+}
+
+.datepicker-day-button:focus {
+  background-color: whitesmoke;
+}
+
+.datepicker-table td.is-today {
+  color: #880e4f;
+}
+
+td.is-today.is-selected {
+  color: aliceblue;
+}
+
+.datepicker-cancel,
+.datepicker-clear,
+.datepicker-today,
+.datepicker-done {
+  color: black;
+  padding: 0 1rem;
+}
+
+.month-prev:focus,
+.month-next:focus {
+  background-color: #880e4f;
+  color: aliceblue;
+}
+
+div.datepicker-row {
+  margin-bottom: 0px;
+}
+
+div.input-field {
+  margin-bottom: 0px;
+}
+
+button.datepicker-clear {
+  color: red;
+}
+
+button.btn-submit {
+  width: 125px;
+  background-color: #880e4f;
+  font-family: "Zilla Slab", sans-serif;
+}
+
+button.btn-submit:hover {
+  background-color: whitesmoke;
+  font-family: "Zilla Slab", sans-serif;
+  color: #880e4f;
+}
+
+button.btn-reset {
+  width: 125px;
+  background-color: red;
+  font-family: "Zilla Slab", sans-serif;
+}
+
+button.btn-reset:hover {
+  background-color: whitesmoke;
+  color: red;
+}
+
+button.btn-reset:focus {
+  background-color: red;
+  color: whitesmoke;
+}
