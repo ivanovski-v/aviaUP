@@ -43,3 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ticketUI.renderTickets(locations.lastSearchData);
   }
 });
+
+
+// TODO: Currency symbol
+// TODO: Cards design
+// TODO: Arrival time
+// TODO: Favourites tickets
+// TODO: Night theme
